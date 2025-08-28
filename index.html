@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicky - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="nav-container">
+            <div class="logo">Sicky Kumar</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sicky Kumar</h1>
+            <p class="subtitle">3rd-year B.Tech Student | Computer Science & Engineering</p>
+            <p class="description">Passionate Data Analyst & MERN Stack Web Developer from MCKV Institute of Engineering
+            </p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary glass">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title animate-on-scroll">About Me</h2>
+        <div class="about-content">
+            <div class="about-text animate-on-scroll">
+                <p>Hello! I'm Sicky Kumar, a passionate 3rd-year Computer Science student at MCKV Institute of
+                    Engineering. My journey in technology has been driven by curiosity and a love for solving complex
+                    problems through code.</p>
+                <p>I specialize in web development with the MERN stack and have a strong passion for data analysis. I
+                    enjoy exploring new technologies, building innovative projects, and turning ideas into reality
+                    through clean, efficient code.</p>
+                <p>When I'm not coding, you'll find me reading books, exploring new technologies, listening to music,
+                    cooking, or learning new skills. I believe in continuous learning and staying updated with the
+                    latest trends in technology.</p>
+            </div>
+            <div class="about-card glass neon-glow animate-on-scroll">
+                <h3>Currently</h3>
+                <p>🎓 B.Tech in Computer Science & Engineering</p>
+                <p>🏫 MCKV Institute of Engineering</p>
+                <p>📊 Exploring Data Analysis</p>
+                <p>💻 Building MERN Stack Applications</p>
+
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        Projects Completed
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        Years Learning
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title animate-on-scroll">Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-category glass animate-on-scroll">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category glass animate-on-scroll">
+                <h3><i class="fas fa-globe"></i> Web Development</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category glass animate-on-scroll">
+                <h3><i class="fas fa-database"></i> Databases</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">MySQL</span>
+                </div>
+            </div>
+            <div class="skill-category glass animate-on-scroll">
+                <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">NetBeans</span>
+                    <span class="skill-tag">IntelliJ IDEA</span>
+                    <span class="skill-tag">JetBrains Suite</span>
+                </div>
+            </div>
+            <div class="skill-category glass animate-on-scroll">
+                <h3><i class="fas fa-chart-bar"></i> Data Analysis</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Jupyter Notebook</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title animate-on-scroll">Projects</h2>
+        <div class="projects-filter animate-on-scroll">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="react">React</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="data">Data Analysis</button>
+        </div>
+        <div class="projects-grid">
+            <!-- Web Development Projects -->
+            <div class="project-card glass animate-on-scroll" data-category="web">
+                <h3>News Web Application</h3>
+                <p>A responsive news application that displays live articles with modern UI/UX design and smooth user
+                    interactions using real-time news APIs.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">News API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/News-Web-Application" target="_blank" class="project-link"><i
+                            class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+
+            <div class="project-card glass animate-on-scroll" data-category="web">
+                <h3>Modern Calculator</h3>
+                <p>A stylish and functional calculator built with vanilla JavaScript, featuring a modern design, smooth
+                    animations, and comprehensive mathematical operations.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/Modern-Calculator" target="_blank" class="project-link"><i
+                            class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+
+            <div class="project-card glass animate-on-scroll" data-category="web">
+                <h3>Gradient Color Picker</h3>
+                <p>An interactive color generator with gradient features, allowing users to create beautiful color
+                    combinations and export CSS gradient codes.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/gradient-color-picker" target="_blank" class="project-link"><i
+                            class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+
+            <!-- React Projects -->
+            <div class="project-card glass animate-on-scroll" data-category="react">
+                <h3>AI Chatbot (Google Gemini)</h3>
+                <p>An intelligent chatbot powered by Google Gemini API, featuring natural language processing,
+                    conversational AI, and responsive design for seamless user interaction.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Gemini API</span>
+                    <span class="tech-tag">CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/ChatBot-Google-Gemini" target="_blank" class="project-link"><i
+                            class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+
+            <!-- Python Projects -->
+            <div class="project-card glass animate-on-scroll" data-category="python">
+                <h3>YouTube Video Manager</h3>
+                <p>A comprehensive video management system using Python and MongoDB to organize, store, and efficiently
+                    handle YouTube video data with full CRUD operations.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">PyMongo</span>
+                    <span class="tech-tag">JSON</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/YouTube-Video-Manager-with-MongoDB-in-Python" target="_blank"
+                        class="project-link"><i class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+
+            <div class="project-card glass animate-on-scroll" data-category="python">
+                <h3>Contact Management System</h3>
+                <p>An efficient contact management system built with Python for storing, organizing, and handling
+                    contacts with a user-friendly interface and database integration.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">Tkinter</span>
+                    <span class="tech-tag">File I/O</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/Contact-Management-System-with-Python" target="_blank"
+                        class="project-link"><i class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+
+            <!-- Data Analysis Projects -->
+            <div class="project-card glass animate-on-scroll" data-category="data">
+                <h3>Amazon Prime Content Analysis</h3>
+                <p>Comprehensive analysis of Amazon Prime Movies & TV Shows dataset with insights on ratings, genres,
+                    trends, and viewer preferences using statistical analysis.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">Seaborn</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/Amazon-Prime-Movies-and-TV-Shows" target="_blank"
+                        class="project-link"><i class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+
+            <div class="project-card glass animate-on-scroll" data-category="data">
+                <h3>HR Analytics Project</h3>
+                <p>Employee attrition analysis using Python to identify patterns, factors contributing to employee
+                    turnover, and predictive insights for HR decision-making.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">Jupyter</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/HR-ANALYTICS-PROJECT" target="_blank" class="project-link"><i
+                            class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+
+            <div class="project-card glass animate-on-scroll" data-category="data">
+                <h3>Alex E-Commerce Sales Dashboard</h3>
+                <p>Interactive Power BI dashboard for Alex E-Commerce sales analysis with comprehensive insights,
+                    visualizations, and business intelligence reports for data-driven decisions.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">Excel</span>
+                    <span class="tech-tag">DAX</span>
+                    <span class="tech-tag">Data Analysis</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sicky9304/ALEX-ECOMMERCE-SALES-DASHBOARD" target="_blank"
+                        class="project-link"><i class="fab fa-github"></i> Repository</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info animate-on-scroll">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>sickykumar01@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>Sicky9304</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect with me</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div>
+                        <h4>Interests</h4>
+                        <p>Reading, Music, Cooking, Learning</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form glass animate-on-scroll" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required
+                        placeholder="Let's discuss your project or just say hello!"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links animate-on-scroll">
+            <a href="https://github.com/Sicky9304" target="_blank" class="social-link github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank" class="social-link linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
